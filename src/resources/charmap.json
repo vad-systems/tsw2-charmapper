@@ -1,0 +1,535 @@
+{
+  "SingleChars": [
+    {
+      "CharCode": "A",
+      "RawDataIndex": 0,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "B",
+      "RawDataIndex": 231,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "C",
+      "RawDataIndex": 462,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "D",
+      "RawDataIndex": 672,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "E",
+      "RawDataIndex": 903,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "F",
+      "RawDataIndex": 1113,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "G",
+      "RawDataIndex": 1344,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "H",
+      "RawDataIndex": 1575,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "I",
+      "RawDataIndex": 1785,
+      "SizeX": 3,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "K",
+      "RawDataIndex": 1848,
+      "SizeX": 12,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "L",
+      "RawDataIndex": 2100,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "M",
+      "RawDataIndex": 2310,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "N",
+      "RawDataIndex": 2541,
+      "SizeX": 12,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "P",
+      "RawDataIndex": 2793,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "Q",
+      "RawDataIndex": 2982,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "R",
+      "RawDataIndex": 3171,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "S",
+      "RawDataIndex": 3402,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "T",
+      "RawDataIndex": 3633,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "U",
+      "RawDataIndex": 3822,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "W",
+      "RawDataIndex": 4032,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "a",
+      "RawDataIndex": 4263,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "b",
+      "RawDataIndex": 4473,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "c",
+      "RawDataIndex": 4662,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "d",
+      "RawDataIndex": 4872,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "e",
+      "RawDataIndex": 5061,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "f",
+      "RawDataIndex": 5271,
+      "SizeX": 7,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "g",
+      "RawDataIndex": 5418,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "h",
+      "RawDataIndex": 5649,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "i",
+      "RawDataIndex": 5880,
+      "SizeX": 3,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "j",
+      "RawDataIndex": 5943,
+      "SizeX": 6,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "k",
+      "RawDataIndex": 6069,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "l",
+      "RawDataIndex": 6258,
+      "SizeX": 6,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "m",
+      "RawDataIndex": 6384,
+      "SizeX": 13,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "n",
+      "RawDataIndex": 6657,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "o",
+      "RawDataIndex": 6867,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "p",
+      "RawDataIndex": 7056,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "q",
+      "RawDataIndex": 8211,
+      "SizeX": 7,
+      "SizeY": 23,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "r",
+      "RawDataIndex": 7434,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "s",
+      "RawDataIndex": 7623,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "t",
+      "RawDataIndex": 7854,
+      "SizeX": 7,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "u",
+      "RawDataIndex": 8001,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "w",
+      "RawDataIndex": 8211,
+      "SizeX": 13,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "z",
+      "RawDataIndex": 8484,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "2",
+      "RawDataIndex": 8673,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "4",
+      "RawDataIndex": 8883,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "5",
+      "RawDataIndex": 9114,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "6",
+      "RawDataIndex": 9324,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "8",
+      "RawDataIndex": 9534,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "9",
+      "RawDataIndex": 9744,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "(",
+      "RawDataIndex": 9954,
+      "SizeX": 7,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": ")",
+      "RawDataIndex": 10101,
+      "SizeX": 7,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": " ",
+      "RawDataIndex": 10248,
+      "SizeX": 2,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "-",
+      "RawDataIndex": 10290,
+      "SizeX": 6,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "'",
+      "RawDataIndex": 10815,
+      "SizeX": 4,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "O",
+      "RawDataIndex": 10899,
+      "SizeX": 11,
+      "SizeY": 21,
+      "bIsValid": true
+    }
+  ],
+  "SingleCharIndices": [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    51,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    53,
+    49,
+    50,
+    -1,
+    -1,
+    -1,
+    52,
+    -1,
+    -1,
+    -1,
+    -1,
+    43,
+    -1,
+    44,
+    45,
+    46,
+    -1,
+    47,
+    48,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    -1,
+    9,
+    10,
+    11,
+    12,
+    54,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    -1,
+    19,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    -1,
+    41,
+    -1,
+    -1,
+    42,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "MultiChars": [
+    {
+      "CharCode": "ö",
+      "RawDataIndex": 10416,
+      "SizeX": 9,
+      "SizeY": 21,
+      "bIsValid": true
+    },
+    {
+      "CharCode": "ü",
+      "RawDataIndex": 10605,
+      "SizeX": 10,
+      "SizeY": 21,
+      "bIsValid": true
+    }
+  ]
+}
