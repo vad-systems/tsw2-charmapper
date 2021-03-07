@@ -183,11 +183,12 @@ func inplace() {
 					charData = append(charData, int((r/a) * 255))
 				}
 			}
+			for len(font.RawTextureData) < int(char.RawDataIndex) + len(charData) {
+				font.RawTextureData = append(font.RawTextureData, 0)
+			}
+
 			for b := range charData {
 				font.RawTextureData[int(char.RawDataIndex) + b] = charData[b]
-				if charData[b] != 255 && charData[b] != 0 {
-					println("wat")
-				}
 			}
 		}
 
