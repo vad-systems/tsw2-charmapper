@@ -17,6 +17,12 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.18
-
+        
     - name: Build
-      run: go build
+      uses: thatisuday/go-cross-build@v1
+      with:
+          platforms: 'linux/amd64, darwin/amd64, windows/amd64'
+          package: 'main'
+          name: 'tsw2-charmapper'
+          compress: 'true'
+          dest: 'build'
