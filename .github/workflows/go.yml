@@ -17,8 +17,8 @@ jobs:
       with:
         go-version: 1.18
     - name: Build Windows
-      run: GOOS=windows GOARCH=amd64 go build ./src/de.vad_systems.tsw2.zza -o build/tsw2-charmapper-win64.exe
+      run: GOOS=windows GOARCH=amd64 go build -o build/tsw2-charmapper-win64.exe ./src/de.vad_systems.tsw2.zza
     - name: Build Linux
-      run: GOOS=linux GOARCH=amd64 go build ./src/de.vad_systems.tsw2.zza -o build/tsw2-charmapper-linux64
+      run: GOOS=linux GOARCH=amd64 go build -o build/tsw2-charmapper-linux64 ./src/de.vad_systems.tsw2.zza
     - name: Build MacOS
-      run: GOOS=darwin GOARCH=amd64 go build ./src/de.vad_systems.tsw2.zza -o build/tsw2-charmapper-darwin64.bin
+      run: GOOS=darwin GOARCH=amd64 go build -o build/tsw2-charmapper-darwin64.bin ./src/de.vad_systems.tsw2.zza
