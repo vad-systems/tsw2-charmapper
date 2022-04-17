@@ -22,7 +22,18 @@ jobs:
       run: GO111MODULE=auto GOOS=linux GOARCH=amd64 go build -o build/tsw2-charmapper-linux64 ./src/de.vad_systems.tsw2.zza
     - name: Build MacOS
       run: GO111MODULE=auto GOOS=darwin GOARCH=amd64 go build -o build/tsw2-charmapper-darwin64.bin ./src/de.vad_systems.tsw2.zza
-    - name: Upload artifacts
+    - name: Upload artifact Windows
       uses: actions/upload-artifact@v3
       with:
-        path: build/tsw2-charmapper-*
+        name: tsw2-charmapper-win64.exe
+        path: build/tsw2-charmapper-win64.exe
+    - name: Upload artifact Linux
+      uses: actions/upload-artifact@v3
+      with:
+        name: tsw2-charmapper-linux64
+        path: build/tsw2-charmapper-linux64
+    - name: Upload artifact MacOS
+      uses: actions/upload-artifact@v3
+      with:
+        name: tsw2-charmapper-darwin64.bin
+        path: build/tsw2-charmapper-darwin64.bin
