@@ -12,17 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version: 1.18
-        
+        go-version: 1.16
     - name: Build
       uses: thatisuday/go-cross-build@v1
       with:
           platforms: 'linux/amd64, darwin/amd64, windows/amd64'
-          package: 'main'
+          package: 'src/de.vad_systems.tsw2.zza'
           name: 'tsw2-charmapper'
-          compress: 'true'
+          compress: false
           dest: 'build'
