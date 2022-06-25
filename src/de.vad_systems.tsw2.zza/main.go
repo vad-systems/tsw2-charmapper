@@ -3,6 +3,7 @@ package main
 import (
 	"./model"
 	"encoding/json"
+	"errors"
 	"flag"
 	"image"
 	"image/color"
@@ -41,12 +42,35 @@ func extract() {
 	contents, err := ioutil.ReadFile(*charmapFileLoc)
 	panicOnErr(err)
 
-	var charmap []model.BitmapTextFontJson
-	err = json.Unmarshal(contents, &charmap)
-	panicOnErr(err)
+	var charmap []model.Charmap
+	var charmap_v3 []model.BitmapTextFontJson3
+	err = json.Unmarshal(contents, &charmap_v3)
+	if len(charmap_v3) > 0 && len(charmap_v3[0].ExportType) > 0 {
+		charmap = make([]model.Charmap, len(charmap_v3))
+		for k, d := range charmap_v3 {
+			charmap[k] = &d
+		}
+	} else {
+		var charmap_v4 []model.BitmapTextFontJson
+		err = json.Unmarshal(contents, &charmap_v4)
+
+		if len(charmap_v4) > 0 && len(charmap_v4[0].Name) > 0 {
+			charmap = make([]model.Charmap, len(charmap_v4))
+			for k, d := range charmap_v4 {
+				charmap[k] = &d
+			}
+		}
+	}
+	var e error
+	if err != nil {
+		e = err
+	} else if charmap == nil {
+		e = errors.New("No charmap")
+	}
+	panicOnErr(e)
 
 	for i := range charmap {
-		font := charmap[i].ExportValue
+		font := charmap[i].GetExportValue()
 		dir := "./font" + strconv.Itoa(i)
 
 		if _, err := os.Open(dir); os.IsNotExist(err) {
@@ -106,12 +130,35 @@ func stitch() {
 	contents, err := ioutil.ReadFile(*charmapFileLoc)
 	panicOnErr(err)
 
-	var charmap []model.BitmapTextFontJson
-	err = json.Unmarshal(contents, &charmap)
-	panicOnErr(err)
+	var charmap []model.Charmap
+	var charmap_v3 []model.BitmapTextFontJson3
+	err = json.Unmarshal(contents, &charmap_v3)
+	if len(charmap_v3) > 0 && len(charmap_v3[0].ExportType) > 0 {
+		charmap = make([]model.Charmap, len(charmap_v3))
+		for k, d := range charmap_v3 {
+			charmap[k] = &d
+		}
+	} else {
+		var charmap_v4 []model.BitmapTextFontJson
+		err = json.Unmarshal(contents, &charmap_v4)
+
+		if len(charmap_v4) > 0 && len(charmap_v4[0].Name) > 0 {
+			charmap = make([]model.Charmap, len(charmap_v4))
+			for k, d := range charmap_v4 {
+				charmap[k] = &d
+			}
+		}
+	}
+	var e error
+	if err != nil {
+		e = err
+	} else if charmap == nil {
+		e = errors.New("No charmap")
+	}
+	panicOnErr(e)
 
 	for i := range charmap {
-		font := &charmap[i].ExportValue
+		font := charmap[i].GetExportValue()
 		dir := "./font" + strconv.Itoa(i)
 
 		// We read SingleCharIndices and stitch the files accordingly
@@ -186,12 +233,35 @@ func inplace() {
 	contents, err := ioutil.ReadFile(*charmapFileLoc)
 	panicOnErr(err)
 
-	var charmap []model.BitmapTextFontJson
-	err = json.Unmarshal(contents, &charmap)
-	panicOnErr(err)
+	var charmap []model.Charmap
+	var charmap_v3 []model.BitmapTextFontJson3
+	err = json.Unmarshal(contents, &charmap_v3)
+	if len(charmap_v3) > 0 && len(charmap_v3[0].ExportType) > 0 {
+		charmap = make([]model.Charmap, len(charmap_v3))
+		for k, d := range charmap_v3 {
+			charmap[k] = &d
+		}
+	} else {
+		var charmap_v4 []model.BitmapTextFontJson
+		err = json.Unmarshal(contents, &charmap_v4)
+
+		if len(charmap_v4) > 0 && len(charmap_v4[0].Name) > 0 {
+			charmap = make([]model.Charmap, len(charmap_v4))
+			for k, d := range charmap_v4 {
+				charmap[k] = &d
+			}
+		}
+	}
+	var e error
+	if err != nil {
+		e = err
+	} else if charmap == nil {
+		e = errors.New("No charmap")
+	}
+	panicOnErr(e)
 
 	for i := range charmap {
-		font := &charmap[i].ExportValue
+		font := charmap[i].GetExportValue()
 		dir := "./font" + strconv.Itoa(i)
 
 		for c := range font.SingleCharIndices {
