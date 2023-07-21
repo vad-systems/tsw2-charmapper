@@ -180,11 +180,8 @@ func stitch() {
 			char.SizeY = uint8(img.Bounds().Dy())
 			for y := 0; y < int(char.SizeY); y++ {
 				for x := 0; x < int(char.SizeX); x++ {
-					if r, _, _, _ := img.At(x, y).RGBA(); r > 0 {
-						charsData = append(charsData, 255)
-					} else {
-						charsData = append(charsData, 0)
-					}
+					r, _, _, a := img.At(x, y).RGBA()
+					charsData = append(charsData, int((r/a)*255))
 				}
 			}
 		}
@@ -200,11 +197,8 @@ func stitch() {
 			char.SizeY = uint8(img.Bounds().Dy())
 			for y := 0; y < int(char.SizeY); y++ {
 				for x := 0; x < int(char.SizeX); x++ {
-					if r, _, _, _ := img.At(x, y).RGBA(); r > 0 {
-						charsData = append(charsData, 255)
-					} else {
-						charsData = append(charsData, 0)
-					}
+					r, _, _, a := img.At(x, y).RGBA()
+					charsData = append(charsData, int((r/a)*255))
 				}
 			}
 		}
@@ -217,6 +211,8 @@ func stitch() {
 		}
 
 		err := os.WriteFile("BitmapTextFont."+strconv.Itoa(i)+".texture", rawData, 0644)
+		newJson, err := json.Marshal(font.RawTextureData)
+		err = ioutil.WriteFile("BitmapTextFont."+strconv.Itoa(i)+".texture.json", newJson, 0644)
 		panicOnErr(err)
 	}
 
@@ -320,6 +316,8 @@ func inplace() {
 
 		err := os.WriteFile("BitmapTextFont."+strconv.Itoa(i)+".texture", rawData, 0644)
 		panicOnErr(err)
+		newJson, err := json.Marshal(font.RawTextureData)
+		err = ioutil.WriteFile("BitmapTextFont."+strconv.Itoa(i)+".texture.json", newJson, 0644)
 	}
 
 	newJson, err := json.Marshal(charmap)
